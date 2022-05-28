@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+           body{
+                background-color: #E7E7E8;
+                font-family: monospace;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 70px;
+                gap: 10px;
+                position: relative;
+           } 
+            h3  {
+                text-align: center;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 42px;
+                flex: none;
+                order: 0;
+                align-self: stretch;
+                flex-grow: 0;
+            }
+            .container {
+                border-radius: 28px;
+                background-color: #ffffff;
+                padding: 20px;
+                width: 350px;
+                height: 400px;
+                padding: 40px 50px 40px 50px;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .container1 {
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding: 5px 0px;
+                gap: 10px;
+            }
+            label {
+                font-weight: 600;
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+            }
+            .input1 {
+                background: rgba(175, 183, 194, 0.1);
+                border: 2px solid #374A67;
+                border-radius: 6px;
+                width: 280px;
+                height: 40px;
+                flex: none;
+                flex-grow: 0;
+            }
+            .input2 {
+                background: rgba(175, 183, 194, 0.1);
+                border: 1px solid #9BA5B3;
+                border-radius: 6px;
+                width: 280px;
+                height: 40px;
+                flex: none;
+                flex-grow: 0;
+            }
+            .input1, .input2 {
+                padding: 0 20px;
+            }
+            .mdp {
+                color: dodgerblue;
+                text-align: right;
+                flex: none;
+                align-self: stretch;
+                flex-grow: 0;
+            }
+            .bouton {
+                background: #374A67;
+                width: 322px;
+                height: 40px;
+                border-radius: 8px;
+                border: none;
+                padding: 5px 30px;
+                color: #ffffff;
+            }
+        </style>
+    </head>
+    <body>
+            <section class="container">
+                <h3>Login</h3>
+                <form action="">
+                    <div class="container1">
+                        <label for="mail">Email</label> <br>
+                        <input type="email" name="mail" placeholder="Votre email" class="input1"><br>
+                        <label for="mail">Mot de passe</label> <br>
+                        <input type="password" name="pass" placeholder="Votre mot de passe" class="input2"> <br>
+                        <div class="mdp">
+                            <p>Mot de passe oublié ?</p> <br>
+                        </div>
+                    </div>
+                  
+                    <input type="submit" name="btn" value="Se connecter" class="bouton">
+                </form>
+            </section>
+    </body>
+</html>
