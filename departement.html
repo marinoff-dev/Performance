@@ -1,59 +1,64 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="public/static/css/style.css">
-    </head>
-    <body>
-        <nav class="table">
-            <div>
-                <h2>Dashboard</h2>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="public/static/css/style.css">
+</head>
+
+<body>
+    <nav class="table">
+        <div>
+            <h2>Dashboard</h2>
+        </div>
+        <div class="user">
+            <img src="public/static/images/2.png" alt="image">
+            <span>John Doe</span>
+        </div>
+    </nav>
+    <section class="conteneur">
+        <div class="sidebar" id="mySidebar">
+           <aside>
+            <a class="is_active" href="">Enregistrer un département</a>
+            <div class="dropdown">
+                <a class="dropbtn" href="">Gestion des employés
+                </a>
+                <div class="dropdown-content">
+                    <a href="#">Enregistrer un employé</a>
+                    <a href="#">Liste des employés</a>
+                </div>
             </div>
-            <div class="user">
-                <img src="public/static/images/2.png" alt="image"> 
-                <span>John Doe</span>
-            </div> 
-        </nav>
-        <section class="conteneur">
-            <div class="sidebar">
-                <a href="">Enregistrer un département</a>
-                <div class="dropdown">
-                    <a class="dropbtn" href="">Gestion des employés
-                    </a>
-                    <div class="dropdown-content">
-                    <a href="#">Enregistrer un employé</a>
-                    <a href="#">Liste des employés</a>
-                    </div>
+            <div class="dropdown">
+                <a class="dropbtn" href="">Gestion des objectifs
+                </a>
+                <div class="dropdown-content">
+                    <a href="#">Enregistrer un objectif</a>
+                    <a href="#">Liste des objectifs</a>
                 </div>
-                <div class="dropdown">
-                    <a class="dropbtn" href="">Gestion des objectifs
-                    </a>
-                    <div class="dropdown-content">
-                    <a href="#">Enregistrer un employé</a>
-                    <a href="#">Liste des employés</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <a class="dropbtn" href="">Gestion des tâches
-                    </a>
-                    <div class="dropdown-content">
-                    <a href="#">Enregistrer un employé</a>
-                    <a href="#">Liste des employés</a>
-                    </div>
-                </div>
-                <a href="">Evaluation de performance</a>
             </div>
-            <section class="container" id="cont">
-                <h3>Enregistrement de département</h3>
-                <form action="">
-                    <div class="container1">
-                        <label for="depart">Département</label> <br>
-                        <input type="text" name="depart" class="input1"><br>
-                    </div>
-                    <input type="submit" name="btn" value="Définir" class="bouton">
-                </form>
-            </section>
+            <div class="dropdown">
+                <a class="dropbtn" href="">Gestion des tâches
+                </a>
+                <div class="dropdown-content">
+                    <a href="#">Enregistrer une tâche</a>
+                    <a href="#">Liste des tâches</a>
+                </div>
+            </div>
+            <a href="">Evaluation de performance</a>
+           </aside>
+        </div>
+        <section class="container" id="cont">
+            <h3>Enregistrement de département</h3>
+            <form action="">
+                <div class="container1">
+                    <label for="depart">Département</label> <br>
+                    <input type="text" name="depart" class="input1" autofocus required><br>
+                </div>
+                <input type="submit" name="btn" value="Définir" class="bouton">
+            </form>
         </section>
-    </body>
+    </section>
+</body>
+
 </html>
