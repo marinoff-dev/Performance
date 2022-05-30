@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="public/static/css/style.css">
+    
 </head>
 
 <body>
@@ -18,7 +19,7 @@
         </div>
     </nav>
     <section class="conteneur">
-        <div class="sidebar" id="mySidebar">
+        <div class="sidebar">
            <aside>
             <a class="is_active" href="">Enregistrer un département</a>
             <div class="dropdown">
@@ -53,7 +54,16 @@
             <form action="">
                 <div class="container1">
                     <label for="depart">Département</label> <br>
-                    <input type="text" name="depart" class="input1" autofocus required><br>
+                        <input type="text" name="depart" class="input1" autofocus required=""><br>
+                        <label for="depart">Sélectionnez le chef département</label> <br>
+                        <select name="libeldepart" id="depart";
+                            
+                            $db=new crud();
+                            $employe=$db->read($table='employe', $field='*');
+                            while($value= $employe->fetch()) {
+                                echo ('<option value='.$value['iddepart'].'>John Doe</option>');
+                            }
+                        </select>
                 </div>
                 <input type="submit" name="btn" value="Définir" class="bouton">
             </form>

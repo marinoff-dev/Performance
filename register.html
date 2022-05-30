@@ -7,13 +7,22 @@
     </head>
     <body>
             <section class="container">
-                <h3>Registration</h3>
+                <h3>Inscription</h3>
                 <form action="">
                     <div class="container1">
                         <label for="nom">Nom et prénoms</label> <br>
                         <input type="text" name="nom" placeholder="nom et prénoms" class="input1"><br>
                         <label for="mail">Email</label> <br>
                         <input type="email" name="mail" placeholder="Votre mail" class="input2"> <br>
+                        <label for="depart">Sélectionnez le type de compte</label> <br>
+                        <select name="libeldepart" id="depart";
+                            
+                            $db=new crud();
+                            $employe=$db->read($table='employe', $field='*');
+                            while($value= $employe->fetch()) {
+                                echo ('<option value='.$value['iddepart'].'>DRH</option>');
+                            }
+                        </select>
                         <label for="mail">Mot de passe</label> <br>
                         <input type="password" name="pass" class="input2"> <br>
                         <label for="mail">Confirmer mot de passe</label> <br>

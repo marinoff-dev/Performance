@@ -5,6 +5,7 @@ body {
     padding: 0;
     overflow-x: hidden;
     font-size: 16px;
+    font-family: monospace;
 }
 h2 {
     color: #1C2534;
@@ -27,11 +28,10 @@ h2 {
 span {
     font-weight: 500;
 }
-.sidebar {
-
+.sidebar {    
     width: 300px;
     background-color: #ffffff;
-    height: 100%;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -115,14 +115,14 @@ h3 {
     border-radius: 28px;
     background-color: #ffffff;
     padding: 20px;
-    width: 350px;
+    width: 340px;
     height: fit-content;
     padding: 40px 50px 40px 50px;
     position: absolute;
-    left: 500px;
+    right: 200px;
 }
 div.container {
-    margin-left: 200px;
+    margin-left: 100px;
     padding: 1px 16px;
     height: 1000px;
   }
@@ -154,10 +154,20 @@ label {
     background: rgba(175, 183, 194, 0.1);
     border: 2px solid #374A67;
     border-radius: 6px;
-    width: 280px;
+    width: 322px;
     height: 40px;
     flex: none;
     flex-grow: 0;
+}
+.input2, select {
+    background: rgba(175, 183, 194, 0.1);
+    border: 1px solid #9BA5B3;
+    border-radius: 8px;
+    width: 322px;
+    height: 40px;
+    flex: none;
+    flex-grow: 0;
+    margin-bottom: 35px;
 }
 .bouton {
     background: #374A67;

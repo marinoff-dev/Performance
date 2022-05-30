@@ -69,6 +69,15 @@ label {
     flex: none;
     flex-grow: 0;
 }
+select {
+    background: rgba(175, 183, 194, 0.1);
+    border: 1px solid #9BA5B3;
+    border-radius: 6px;
+    width: 320px;
+    height: 40px;
+    flex: none;
+    flex-grow: 0;
+}
 .input1, .input2 {
     padding: 0 20px;
 }

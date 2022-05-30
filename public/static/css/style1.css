@@ -5,6 +5,7 @@ body {
     padding: 0;
     overflow-x: hidden;
     font-size: 15px;
+    font-family: monospace;
 }
 h2 {
     color:#1C2534;
@@ -61,6 +62,9 @@ span {
 .dropdown .dropbtn {
     background-color: white;
     padding: 18px 10px;
+}
+.dropdown:hover {
+    background-color: #acacac;
 }
 .dropdown-content {
     display: none;
