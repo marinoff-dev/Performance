@@ -140,13 +140,13 @@ form{
     flex: none;
     order: 0;
     flex-grow: 0;
-    padding: 10px;
+    /*padding: 10px;*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     padding: 5px 0px;
-    gap: 10px;
+    gap: 5px;
 }
 label {
     font-weight: 600;
@@ -172,7 +172,7 @@ label {
     height: 40px;
     flex: none;
     flex-grow: 0;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 .bouton {
     background: #374A67;
