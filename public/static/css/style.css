@@ -6,9 +6,10 @@ body {
     overflow-x: hidden;
     font-size: 16px;
     font-family: monospace;
+    color: #1c2534;
 }
 h2 {
-    color: #1C2534;
+    color: #374A67;
 }
 .table{
     display: flex;
@@ -17,13 +18,22 @@ h2 {
     padding: 10px 30px 0 30px;
     background-color: #ffffff;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
 }
-
+.dash, .user {
+    display: flex;
+    position: static;
+    
+}
 .user{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 120px;
+    padding-right: 50px;
 }
 span {
     font-weight: 500;
@@ -36,8 +46,9 @@ span {
     flex-direction: column;
     align-items: flex-start;
     margin-left: -5%;
-    margin-top: -1%;
-    padding: 40px;
+    margin-top: 5%;
+    padding: 50px 40px;
+    z-index: 1;
 }
 
 .sidebar a {
@@ -101,7 +112,7 @@ span {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 30px;
+    margin: 100px 30px;
     flex-direction: column;
     align-items: center;
     padding: 40px 30px;
@@ -109,16 +120,10 @@ span {
     position: relative;
 }
 h3 {
-    margin-bottom: 45px;
+    margin-bottom: 20px;
+    color: #374A67;
 }
 .container {
-    border-radius: 28px;
-    background-color: #ffffff;
-    padding: 20px;
-    width: 340px;
-    height: fit-content;
-    padding: 40px 50px 40px 50px;
-    position: absolute;
     right: 200px;
 }
 div.container {

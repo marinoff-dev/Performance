@@ -5,11 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="public/static/css/style1.css">
+    <script src="public/static/js/style.js"></script>
 </head>
 
 <body>
     <nav class="table">
-        <div>
+        <div class="dash">
             <h2>Dashboard</h2>
         </div>
         <div class="user">
@@ -18,11 +19,11 @@
         </div>
     </nav>
     <section class="conteneur">
-        <div class="sidebar" id="mySidebar">
+        <div class="sidebar">
             <aside>
-                <a class="is_active" href="">Enregistrer un département</a>
+                <a href="">Enregistrer un département</a>
                 <div class="dropdown">
-                    <a class="dropbtn" href="">Gestion des employés
+                    <a class="is_active" class="dropbtn" href="" style="color: #ffffff;">Gestion des employés
                     </a>
                     <div class="dropdown-content">
                         <a href="#">Enregistrer un employé</a>
@@ -45,14 +46,21 @@
                         <a href="#">Liste des tâches</a>
                     </div>
                 </div>
+                <div class="dropdown">
+                    <a class="dropbtn" href="">Gestion des comptes
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">Inscrire un employé</a>
+                        <a href="#">Supprimer un employé </a>
+                    </div>
+                </div>
                 <a href="">Evaluation de performance</a>
             </aside>
         </div>
         <section class="container" id="cont">
-            <h2>Enregistrement d'employé</h2>
+            <h3>Enregistrement d'employé</h3>
                 <form action="" method="post">
                     <div class="container1">
-                        <h3>Informations supplémentaires sur l'employé</h3>
                         <label for="mat">No matricule:</label> <br>
                         <label for="datenaiss">Date de naissance</label> <br>
                         <input type="date" name="datenaiss" required="" autofocus class="input1"><br>
@@ -66,7 +74,7 @@
                             $db=new crud();
                             $employe=$db->read($table='employe', $field='*');
                             while($value= $employe->fetch()) {
-                                echo ('<option value='.$value['iddepart'].'>'.$value['libeldepart'].'</option>');
+                                echo ('<option value='.$value['iddepart'].'>Informatique</option>');
                             }
                         </select>
                         <label for="datedeb">Date de début</label> <br>

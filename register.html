@@ -6,12 +6,61 @@
         <link rel="stylesheet" href="public/static/css/id.css">
     </head>
     <body>
-            <section class="container">
-                <h3>Inscription</h3>
+        <nav class="table">
+            <div class="dash">
+                <h2>Dashboard</h2>
+            </div>
+            <div class="user">
+                <img src="public/static/images/2.png" alt="image">
+                <span>John Doe</span>
+            </div>
+        </nav>
+        <section class="conteneur">
+            <div class="sidebar">
+                <aside>
+                    <a href="">Enregistrer un département</a>
+                    <div class="dropdown">
+                        <a class="dropbtn" href="">Gestion des employés
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="#">Enregistrer un employé</a>
+                            <a href="#">Liste des employés</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a class="dropbtn" href="">Gestion des objectifs
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="#">Enregistrer un objectif</a>
+                            <a href="#">Liste des objectifs</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a class="dropbtn" href="">Gestion des tâches
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="#">Enregistrer une tâche</a>
+                            <a href="#">Liste des tâches</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a  class="is_active" class="dropbtn" href="" style="color: #ffffff;">Gestion des comptes
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="#">Inscrire un employé</a>
+                            <a href="#">Supprimer un employé </a>
+                        </div>
+                    </div>
+                    <a href="">Evaluation de performance</a>
+                </aside>
+            </div>
+        </section>
+            <section class="container" id="cont">
+                <h2>Inscription</h2>
                 <form action="">
                     <div class="container1">
                         <label for="nom">Nom et prénoms</label> <br>
-                        <input type="text" name="nom" placeholder="nom et prénoms" class="input1"><br>
+                        <input type="text" name="nom" placeholder="nom et prénoms" class="input1" required="" autofocus><br>
                         <label for="mail">Email</label> <br>
                         <input type="email" name="mail" placeholder="Votre mail" class="input2"> <br>
                         <label for="depart">Sélectionnez le type de compte</label> <br>
