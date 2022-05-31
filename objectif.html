@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="public/static/css/style.css">
+    
+</head>
+
+<body>
+    <nav class="table">
+        <div>
+            <h2>Dashboard</h2>
+        </div>
+        <div class="user">
+            <img src="public/static/images/2.png" alt="image">
+            <span>John Doe</span>
+        </div>
+    </nav>
+    <section class="conteneur">
+        <div class="sidebar">
+           <aside>
+            <a class="is_active" href="" style="color: #ffffff;">Enregistrer un département</a>
+            <div class="dropdown">
+                <a class="dropbtn" href="">Gestion des employés
+                </a>
+                <div class="dropdown-content">
+                    <a href="#">Enregistrer un employé</a>
+                    <a href="#">Liste des employés</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="dropbtn" href="">Gestion des objectifs
+                </a>
+                <div class="dropdown-content">
+                    <a href="#">Enregistrer un objectif</a>
+                    <a href="#">Liste des objectifs</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="dropbtn" href="">Gestion des tâches
+                </a>
+                <div class="dropdown-content">
+                    <a href="#">Enregistrer une tâche</a>
+                    <a href="#">Liste des tâches</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="dropbtn" href="">Gestion des comptes
+                </a>
+                <div class="dropdown-content">
+                    <a href="#">Inscrire un employé</a>
+                    <a href="#">Supprimer un employé </a>
+                </div>
+            </div>
+            <a href="">Evaluation de performance</a>
+           </aside>
+        </div>
+        <section class="container" id="cont">
+            <h3>Définition d'objectif</h3>
+            <form action="">
+                <div class="container1">
+                        <label for="depart">Sélectionnez le chef département</label> <br>
+                        <select name="libeldepart" id="depart";
+                            
+                            $db=new crud();
+                            $employe=$db->read($table='employe', $field='*');
+                            while($value= $employe->fetch()) {
+                                echo ('<option value='.$value['iddepart'].'>Informatique</option>');
+                            }
+                        </select>
+                        <label for="obj">Objectif à atteindre</label> <br>
+                        <input type="text" name="obj" class="input2"> <br>
+                        <label for="des">Description</label> <br>
+                        <textarea name="des" class="input2" style="height: 140px;"placeholder="Entrez la description  de l'objectif"></textarea> <br>
+                        <label for="num">Echéance</label> 
+                        <input type="date" name="datenaiss" required="" autofocus class="input2"><br>
+                </div>
+                <input type="submit" name="btn" value="Définir" class="bouton">
+            </form>
+        </section>
+    </section>
+</body>
+
+</html>
