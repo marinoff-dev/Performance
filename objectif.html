@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="public/static/css/style.css">
+    <link rel="stylesheet" href="public/static/css/style1.css">
     
 </head>
 
@@ -21,7 +21,7 @@
     <section class="conteneur">
         <div class="sidebar">
            <aside>
-            <a class="is_active" href="" style="color: #ffffff;">Enregistrer un département</a>
+            <a href="">Enregistrer un département</a>
             <div class="dropdown">
                 <a class="dropbtn" href="">Gestion des employés
                 </a>
@@ -31,7 +31,7 @@
                 </div>
             </div>
             <div class="dropdown">
-                <a class="dropbtn" href="">Gestion des objectifs
+                <a class="is_active" style="color: #ffffff;" class="dropbtn" href="">Gestion des objectifs
                 </a>
                 <div class="dropdown-content">
                     <a href="#">Enregistrer un objectif</a>
@@ -61,7 +61,7 @@
             <h3>Définition d'objectif</h3>
             <form action="">
                 <div class="container1">
-                        <label for="depart">Sélectionnez le chef département</label> <br>
+                        <label for="depart">Sélectionnez le département</label> <br>
                         <select name="libeldepart" id="depart";
                             
                             $db=new crud();
@@ -71,7 +71,7 @@
                             }
                         </select>
                         <label for="obj">Objectif à atteindre</label> <br>
-                        <input type="text" name="obj" class="input2"> <br>
+                        <input type="text" name="obj" class="input2" style="height: 80px;"> <br>
                         <label for="des">Description</label> <br>
                         <textarea name="des" class="input2" style="height: 140px;"placeholder="Entrez la description  de l'objectif"></textarea> <br>
                         <label for="num">Echéance</label> 
