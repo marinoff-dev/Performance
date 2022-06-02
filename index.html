@@ -3,17 +3,21 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="public/static/css/accueil.css">
+        <link rel="stylesheet" href="public/static/css/log.css">
     </head>
     <body>
-            <div class="container">
-                <div class="image">
-                    <img src="public/static/images/1.jpg" alt="page d'accueil" class="imgacc">
-                    <div class="bouton"><a href="register.html">Commencer</a></div>
-                </div>
-                <div id="footer">
-                    <p>&copy; Copyright 2022</p>
-                </div>
-            </div>
+            <section class="container">
+                <h3>Connexion</h3>
+                <form action="">
+                    <div class="container1">
+                        <label for="mail">Email</label> <br>
+                        <input type="email" name="mail" placeholder="Votre email" class="input1"><br>
+                        <label for="mail">Mot de passe</label> <br>
+                        <input type="password" name="pass" placeholder="Votre mot de passe" class="input2"> <br>
+                    </div>
+                  
+                    <input type="submit" name="btn" value="Se connecter" class="bouton">
+                </form>
+            </section>
     </body>
 </html>
