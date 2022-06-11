@@ -53,10 +53,26 @@ span {
     margin-left: -5%;
     margin-top: 5%;
     padding: 60px 50px;
+    overflow: auto;
+    z-index: 1;
+}
+.cotebar {
+
+    width: 300px;
+    background-color: #ffffff;
+    position: fixed;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: -1%;
+    margin-top: -2%;
+    padding: 60px 50px;
+    overflow: auto;
     z-index: 1;
 }
 
-.sidebar a {
+.sidebar a, .cotebar a {
     float: left;
     display: block;
     color: #000000;
@@ -66,18 +82,27 @@ span {
     font-size: 16px;
     font-weight: 300;
 }
-
-.is_active {
+aside a:hover {
     background-color: #374A67;
-    padding: 10px;
+    color: #ffffff;
+}
+.sidebar a, .cotebar a:hover {
     border-radius: 8px;
 }
-.dropdown .dropbtn {
+.dropbtn {
     background-color: white;
     padding: 18px 10px;
+    border: none;
+    cursor: pointer;
 }
-.dropdown:hover {
-    background-color: #acacac;
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #374A67;
+    border-radius: 8px;
+    color:#ffffff;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
 .dropdown-content {
     display: none;
@@ -85,8 +110,8 @@ span {
     border-radius: 8px;
     background-color: #ddd;
     min-width: 250px;
-    left: 200px;
-    top: 150px;
+    left: 50px;
+    bottom: 30px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -102,10 +127,12 @@ span {
 .dropdown-content a:hover {
     background-color: #374A67;
     color: #ffffff;
-  }
+}
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 
 /* Formulaire */
 
@@ -131,6 +158,17 @@ h3 {
     left: 350px;
     
 }
+.confer {
+    left: 200px;
+}
+div.confer {
+    margin-left: 200px;
+    padding: 1px 16px;
+  }
+.contenir {
+    left: 600px;
+    padding: 1px 16px;
+  }
 .container {
     left: 500px;
 }
@@ -188,7 +226,7 @@ label {
     background: rgba(175, 183, 194, 0.1);
     border: 1px solid #9BA5B3;
     border-radius: 8px;
-    width: 250px;
+    width: 322px;
     height: 40px;
     flex: none;
     flex-grow: 0;
@@ -196,7 +234,17 @@ label {
 .bout {
     margin-top: 30px;
     background: #374A67;
-    width: 250px;
+    width: 322px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+}
+.bouton {
+    background: #374A67;
+    width: 322px;
     height: 40px;
     border-radius: 8px;
     border: none;
@@ -220,26 +268,84 @@ label {
 .etat {
     padding-bottom: 60px;
 }
-@media screen and (max-width: 400px) {
-    .sidebar {
-      width: 100%;
-      height: 500px;
-      position: relative;
+@media screen and (max-width: 800px) {
+    .conteneur {
+        position: absolute;
+        z-index: -1;
+        display: block;
+        right: 0;
+        left: 0;
     }
-    .sidebar a {float: left;}
-    .container {
+    .eval {
         position: relative;
-        width: 300px;
-        left: 10px;
+        z-index: 1;
+        display: block;
+        right: 0;
+        left: 0;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+       
     }
-    .input1 {
-        width: 150px;
+    .sidebar {
+        position: relative;
+        width: 100%;
+        display: block;
+        height: fit-content;
+        justify-content: center;
     }
-    .bouton {
-        width: 150px;
+    .cotebar {
+        margin-top: 55px;
+        position: relative;
+        width: fit-content;
+        /*width: 100%;*/
+        display: block;
+        height: fit-content;
+        justify-content: center;
+    }
+
+
+    h3, h2 {
+        text-align: center;
+    }
+    .confer {
+        left: 200px;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        display: contents;
+        position: relative;
+    }
+    #cont {
+        /*display: contents;
+        position: relative;
+        overflow-y: scroll;
+        scroll-behavior: smooth;*/
+        display: contents;
+        align-items: center;
+        justify-content: space-between;
+        margin: 100px 30px;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 30px;
+        gap: 5px;
+        position: relative;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        border-radius: 8px;
+        background-color: #ddd;
+        min-width: 250px;
+        left: 50px;
+        bottom: 20px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
     }
   }
-
 .def {
     display: flex;
     flex-direction: row;

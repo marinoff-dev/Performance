@@ -43,6 +43,7 @@
                     </a>
                     <div class="dropdown-content">
                         <a href="#">Enregistrer une tâche</a>
+                        <a href="#">Suivre une tâche</a>
                         <a href="#">Liste des tâches</a>
                     </div>
                 </div>
@@ -54,7 +55,7 @@
                         <a href="#">Supprimer un employé </a>
                     </div>
                 </div>
-                <a class="is_active" style="color: #ffffff;" href="">Evaluation de performance</a>
+                <a href="">Evaluation de performance</a>
             </aside>
         </div>
         <section class="contain" id="cont">
@@ -93,186 +94,71 @@
                         <h4>Qualités</h4>
                         <div class="case">
                             <p>Fait preuve de rigueur dans le travail</p>
-                            <select name="libeldepart" id="depart"; 
-                                $db=new crud();
-                                $employe=$db->read($table='employe', $field='*');
-                                while($value= $employe->fetch()) {
-                                    echo ('<option value='.$value['iddepart'].'>1</option>');
-                                }
-                            </select>
+                            <input type="number" name="qu1" min="1" max="4" class="input2">
                         </div>
                         <div class="case">
                             <p>S'assure de la qualité de son travail en faisant les suivis et les vérificaions nécessaires</p>
-                            <select name="libeldepart" id="depart";
-                            
-                                $db=new crud();
-                                $employe=$db->read($table='employe', $field='*');
-                                while($value= $employe->fetch()) {
-                                    echo ('<option value='.$value['iddepart'].'>1</option>');
-                                }
-                            </select>
+                            <input type="number" name="qu2" min="1" max="4" class="input2">
                         </div>
                     <div>
                         <h4>Organisation du travail</h4>
                         <div class="case">
                             <p>Planifie et organise son travail de façon adéquate</p>
-                            <select name="libeldepart" id="depart";
-                            
-                                $db=new crud();
-                                $employe=$db->read($table='employe', $field='*');
-                                while($value= $employe->fetch()) {
-                                    echo ('<option value='.$value['iddepart'].'>1</option>');
-                                }
-                            </select>
+                            <input type="number" name="qu3" min="1" max="4" class="input2">
                         </div>
                         <div class="case">
                             <p>Utilise efficacement son temps pour réaliser les tâches qui lui sont confiées</p>
-                            <select name="libeldepart" id="depart";
-                            
-                                $db=new crud();
-                                $employe=$db->read($table='employe', $field='*');
-                                while($value= $employe->fetch()) {
-                                    echo ('<option value='.$value['iddepart'].'>1</option>');
-                                }
-                            </select>
+                            <input type="number" name="qu4" min="1" max="4" class="input2">
                         </div>
                         <div class="case">
                             <p>Respecte les délais et les échéanciers qui lui sont fixés</p>
-                            <select name="libeldepart" id="depart";
-                            
-                                $db=new crud();
-                                $employe=$db->read($table='employe', $field='*');
-                                while($value= $employe->fetch()) {
-                                    echo ('<option value='.$value['iddepart'].'>1</option>');
-                                }
-                            </select>
+                            <input type="number" name="qu5" min="1" max="4" class="input2">
                         </div>
                     </div>
                     <div>
                         <h4>Prise de décisions</h4>
                         <div class="case">
                             <p>Cerne efficacement les données d'un problème</p>
-                            <select name="libeldepart" id="depart";
-                            
-                                $db=new crud();
-                                $employe=$db->read($table='employe', $field='*');
-                                while($value= $employe->fetch()) {
-                                    echo ('<option value='.$value['iddepart'].'>1</option>');
-                                }
-                            </select>
-                        </div>
-                        <div class="case">
-                            <p>Cerne efficacement les données d'un problème</p>
-                            <select name="libeldepart" id="depart";
-                            
-                                $db=new crud();
-                                $employe=$db->read($table='employe', $field='*');
-                                while($value= $employe->fetch()) {
-                                    echo ('<option value='.$value['iddepart'].'>1</option>');
-                                }
-                            </select>
+                            <input type="number" name="qu6" min="1" max="4" class="input2">
                         </div>
                         <div class="case">
                             <p>Propose des solutions possibles aux problèmes rencontrés</p>
-                            <select name="libeldepart" id="depart";
-                            
-                                $db=new crud();
-                                $employe=$db->read($table='employe', $field='*');
-                                while($value= $employe->fetch()) {
-                                    echo ('<option value='.$value['iddepart'].'>1</option>');
-                                }
-                            </select>
+                            <input type="number" name="qu8" min="1" max="4" class="input2">
                         </div>
                         <div class="case">
                             <p>Prends les moyens pour attendre les résultats</p>
-                            <select name="libeldepart" id="depart";
-                            
-                                $db=new crud();
-                                $employe=$db->read($table='employe', $field='*');
-                                while($value= $employe->fetch()) {
-                                    echo ('<option value='.$value['iddepart'].'>1</option>');
-                                }
-                            </select>
+                            <input type="number" name="qu9" min="1" max="4" class="input2">
                         </div>
                     </div>
                     <div>
                         <h4>Attitudes et comportements au travail</h4>
                         <div class="case">
                             <p>Traite ses collègues et son supérieur avec respect</p>
-                            <select name="libeldepart" id="depart";
-                            
-                                $db=new crud();
-                                $employe=$db->read($table='employe', $field='*');
-                                while($value= $employe->fetch()) {
-                                    echo ('<option value='.$value['iddepart'].'>1</option>');
-                                }
-                            </select>
+                            <input type="number" name="qu10" min="1" max="4" class="input2">
                         </div>
                         <div class="case">
-                            <p>Maitnitnt des relations harmonieuses et collabore avec ses collègues</p>
-                            <select name="libeldepart" id="depart";
-                            
-                                $db=new crud();
-                                $employe=$db->read($table='employe', $field='*');
-                                while($value= $employe->fetch()) {
-                                    echo ('<option value='.$value['iddepart'].'>1</option>');
-                                }
-                            </select>
+                            <p>Maintient des relations harmonieuses et collabore avec ses collègues</p>
+                            <input type="number" name="qu11" min="1" max="4" class="input2">
                         </div>
                         <div class="case">
                             <p>Fait face aux imprévus et aux urgences en gardant son calme</p>
-                            <select name="libeldepart" id="depart";
-                            
-                                $db=new crud();
-                                $employe=$db->read($table='employe', $field='*');
-                                while($value= $employe->fetch()) {
-                                    echo ('<option value='.$value['iddepart'].'>1</option>');
-                                }
-                            </select>
+                            <input type="number" name="qu12" min="1" max="4" class="input2">
                         </div>
                         <div class="case">
                             <p>Fais preuve de souplesse face aux changements qui lui sont apportés</p>
-                            <select name="libeldepart" id="depart";
-                            
-                                $db=new crud();
-                                $employe=$db->read($table='employe', $field='*');
-                                while($value= $employe->fetch()) {
-                                    echo ('<option value='.$value['iddepart'].'>1</option>');
-                                }
-                            </select>
+                            <input type="number" name="qu13" min="1" max="4" class="input2">
                         </div>
                         <div class="case">
                             <p>Respecte les politiques et les changements de l'entreprise</p>
-                            <select name="libeldepart" id="depart";
-                            
-                                $db=new crud();
-                                $employe=$db->read($table='employe', $field='*');
-                                while($value= $employe->fetch()) {
-                                    echo ('<option value='.$value['iddepart'].'>1</option>');
-                                }
-                            </select>
+                            <input type="number" name="qu15" min="1" max="4" class="input2">
                         </div>
                         <div class="case">
                             <p>Fait preuve d'éthique professionnelle et d'intégrité dans tous les aspects de son travail</p>
-                            <select name="libeldepart" id="depart";
-                            
-                                $db=new crud();
-                                $employe=$db->read($table='employe', $field='*');
-                                while($value= $employe->fetch()) {
-                                    echo ('<option value='.$value['iddepart'].'>1</option>');
-                                }
-                            </select>
+                            <input type="number" name="qu16" min="1" max="4" class="input2">
                         </div>
                         <div class="case">
                             <p>Fait preuve de ponctualité et d'assiduité</p>
-                            <select name="libeldepart" id="depart";
-                            
-                                $db=new crud();
-                                $employe=$db->read($table='employe', $field='*');
-                                while($value= $employe->fetch()) {
-                                    echo ('<option value='.$value['iddepart'].'>1</option>');
-                                }
-                            </select>
+                            <input type="number" name="qu17" min="1" max="4" class="input2">
                         </div>
                     </div>
                 </section>
@@ -283,7 +169,7 @@
                         <input type="radio" name="partiel" style="margin-right: 10px;">Objectif atteint
                         <input type="radio" name="partiel" style="margin-right: 10px;">Objectif dépassé
                     </div>
-                    <label for="comment">Commentaires</label><br>
+                    <label for="comment">Commentaires sur l'employé évalué</label><br>
                     <textarea name="comment" placeholder="Entrez un commentaire" style="padding-top:20px;" cols="40" rows="5"></textarea>
                 </section>
                 <div>
