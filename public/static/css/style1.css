@@ -352,7 +352,6 @@ label {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0px;
-    /*margin-top: 50px;*/
     gap: 10px;
     width: 810px;
     height: 100px;
@@ -361,4 +360,9 @@ label {
     flex-grow: 0;
     position: relative;
     bottom: 0;
+}
+
+.mention {
+    display: block;
+    padding: 10px;
 }
