@@ -1,14 +1,16 @@
-<!--Page d'inscription d'employé-->
-
+<!--Lorsque l'utilisateur appuiera sur l'onglet "Evaluation de performance", cette page s'affichera pour qu'il puissse
+rechercher le département dans lequel se trouve l'employé pour l'évaluation-->
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="public/static/css/style1.css">
-    </head>
-    <body>
-       <nav class="table">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="public/static/css/style1.css">
+</head>
+
+<body>
+    <nav class="table">
         <div class="div1">
             <img src="public/static/images/dashboard.png" class="img1" alt="">
             <h2 style="padding-left: 10px;">Dashboard</h2>
@@ -18,8 +20,8 @@
             <span>John Doe</span>
         </div>
     </nav>
-    <section class="eval">
-        <div class="cotebar">
+    <section class="conteneur">
+        <div class="sidebar">
            <aside>
             
             <a style="margin-bottom: 5px;" href="">Enregistrer un département</a>
@@ -65,30 +67,18 @@
             </div>
            </aside>
         </div>
-            <section class="confer" id="cont">
-                <h2>Inscription</h2>
+        <section class="rechercher" id="cont">
+            <h2>Définition d'objectif</h2>
+            <p>Rechercher le département dans lequel se trouve l'employé</p>
                 <form action="" method="post">
                     <div class="container1">
-                        <label for="nom">Nom et prénoms</label> <br>
-                        <input type="text" name="nom" placeholder="nom et prénoms" class="input1" required="" autofocus><br>
-                        <label for="mail">Email</label> <br>
-                        <input type="email" name="mail" placeholder="Votre mail" class="input2"> <br>
-                        <label for="depart">Sélectionnez le type de compte</label> <br>
-                        <select name="libeldepart" id="depart";
-                            
-                            $db=new crud();
-                            $employe=$db->read($table='employe', $field='*');
-                            while($value= $employe->fetch()) {
-                                echo ('<option value='.$value['iddepart'].'>DRH</option>');
-                            }
-                        </select>
-                        <label for="mail">Mot de passe</label> <br>
-                        <input type="password" name="pass" placeholder="Votre mot de passe" class="input2"> <br>
-                        <label for="mail">Confirmer mot de passe</label> <br>
-                        <input type="password" name="pass" class="input2"> <br>
+                        <div>
+                            <input type="text" name="depart" placeholder="Rechercher département" class="input2">
+                            <input type="submit" name="btn" value="Rechercher" class="bouton3">
+                        </div>
                     </div>
-                    <input type="submit" name="btn" value="Enregistrer" class="bouton">
                 </form>
-            </section>
-    </body>
+        </section>
+    </section>
+</body>
 </html>

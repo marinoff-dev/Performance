@@ -6,43 +6,44 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="public/static/css/style.css">
-    
+    <link rel="stylesheet" href="public/static/css/style1.css">
 </head>
 
 <body>
     <nav class="table">
-        <div>
-            <h2>Dashboard</h2>
+        <div class="div1">
+            <img src="public/static/images/dashboard.png" class="img1" alt="">
+            <h2 style="padding-left: 10px;">Dashboard</h2>
         </div>
         <div class="user">
-            <img src="public/static/images/2.png" alt="image">
+            <img src="public/static/images/account.png" style="position:relative; top: 0px;" class="img1" alt="image">
             <span>John Doe</span>
         </div>
     </nav>
     <section class="conteneur">
         <div class="sidebar">
            <aside>
-            <a class="is_active" href="" style="color: #ffffff;">Enregistrer un département</a>
+            <a style="margin-bottom: 5px;" href="">Enregistrer un département</a>
+            <img src="public/static/images/workers-connections-symbol.png" class="img2" alt="">
             <div class="dropdown">
-                <a class="dropbtn" href="">Gestion des employés
-                </a>
+                <a class="dropbtn" href="">Gestion des employés</a>
+                <img src="public/static/images/employment-man(1).png" style="padding-left: 20px;" class="img1" alt="">
                 <div class="dropdown-content">
                     <a href="#">Enregistrer un employé</a>
                     <a href="#">Liste des employés</a>
                 </div>
             </div>
             <div class="dropdown">
-                <a class="dropbtn" href="">Gestion des objectifs
-                </a>
+                <a class="dropbtn" href="">Gestion des objectifs</a>
+                <img src="public/static/images/goal(1).png" class="img1" alt="">
                 <div class="dropdown-content">
                     <a href="#">Enregistrer un objectif</a>
                     <a href="#">Liste des objectifs</a>
                 </div>
             </div>
             <div class="dropdown">
-                <a class="dropbtn" href="">Gestion des tâches
-                </a>
+                <img src="public/static/images/clipboard.png" style="padding-left: 20px;" class="img1" alt="">
+                <a class="dropbtn" href="">Gestion des tâches</a>
                 <div class="dropdown-content">
                     <a href="#">Enregistrer une tâche</a>
                     <a href="#">Suivre une tâche</a>
@@ -50,6 +51,7 @@
                 </div>
             </div>
             <div class="dropdown">
+                <img src="public/static/images/user(1).png" style="padding-left: 20px;" class="img1" alt="">
                 <a class="dropbtn" href="">Gestion des comptes
                 </a>
                 <div class="dropdown-content">
@@ -58,10 +60,14 @@
                 </div>
             </div>
             <a href="">Evaluation de performance</a>
+            <img src="public/static/images/performance.png" class="img3" alt="">
+            <div class="bas">
+                <a class="dropbtn" href="">Déconnexion</a>
+            </div>
            </aside>
         </div>
-        <section class="container" id="cont">
-            <h3>Enregistrement de département</h3>
+        <section class="container" style="margin-top: 140px;" id="cont">
+            <h2>Enregistrement de département</h2>
             <form action="">
                 <div class="container1">
                     <label for="depart">Département</label> <br>

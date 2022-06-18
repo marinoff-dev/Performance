@@ -1,14 +1,15 @@
-<!--Page d'inscription d'employé-->
-
+<!--Lorsque l'utilisateur appuie sur le bouton Evaluer, cette page s'affichera à la fin de l'évaluation-->
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="public/static/css/style1.css">
-    </head>
-    <body>
-       <nav class="table">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="public/static/css/style1.css">
+</head>
+
+<body>
+    <nav class="table">
         <div class="div1">
             <img src="public/static/images/dashboard.png" class="img1" alt="">
             <h2 style="padding-left: 10px;">Dashboard</h2>
@@ -18,10 +19,9 @@
             <span>John Doe</span>
         </div>
     </nav>
-    <section class="eval">
-        <div class="cotebar">
+    <section class="conteneur">
+        <div class="sidebar">
            <aside>
-            
             <a style="margin-bottom: 5px;" href="">Enregistrer un département</a>
             <img src="public/static/images/workers-connections-symbol.png" class="img2" alt="">
             <div class="dropdown">
@@ -60,35 +60,28 @@
             </div>
             <a href="">Evaluation de performance</a>
             <img src="public/static/images/performance.png" class="img3" alt="">
-            <div class="bas">
-                <a class="dropbtn" href="">Déconnexion</a>
-            </div>
            </aside>
         </div>
-            <section class="confer" id="cont">
-                <h2>Inscription</h2>
-                <form action="" method="post">
-                    <div class="container1">
-                        <label for="nom">Nom et prénoms</label> <br>
-                        <input type="text" name="nom" placeholder="nom et prénoms" class="input1" required="" autofocus><br>
-                        <label for="mail">Email</label> <br>
-                        <input type="email" name="mail" placeholder="Votre mail" class="input2"> <br>
-                        <label for="depart">Sélectionnez le type de compte</label> <br>
-                        <select name="libeldepart" id="depart";
-                            
-                            $db=new crud();
-                            $employe=$db->read($table='employe', $field='*');
-                            while($value= $employe->fetch()) {
-                                echo ('<option value='.$value['iddepart'].'>DRH</option>');
-                            }
-                        </select>
-                        <label for="mail">Mot de passe</label> <br>
-                        <input type="password" name="pass" placeholder="Votre mot de passe" class="input2"> <br>
-                        <label for="mail">Confirmer mot de passe</label> <br>
-                        <input type="password" name="pass" class="input2"> <br>
-                    </div>
-                    <input type="submit" name="btn" value="Enregistrer" class="bouton">
-                </form>
-            </section>
-    </body>
+        <section class="result" id="cont">
+            <h2 class="resolve">Résultat</h2>
+            <div class="box">
+                <h3 class="except">Pourcentage</h3>
+                <div class="box1">
+                    <p>70%</p>
+                </div>
+            </div>
+            <div class="box2">
+                <h2 class="resolve">Appréciation</h2>
+                <div class="box3">
+                    <h2 style="color: #ffffff;">Très bien</h2>
+                </div>
+            </div>
+            
+            <div>
+                <p class="recomp">Récompensé d'une prime de: <span class="augmentation">20%</span></p> 
+                <p class="recomp">Votre salaire passe à: <span class="augmentation">80000 FCFA</span></p>
+            </div>
+        </section>
+    </section>
+</body>
 </html>

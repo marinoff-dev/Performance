@@ -12,56 +12,63 @@
 
 <body>
     <nav class="table">
-        <div class="dash">
-            <h2>Dashboard</h2>
+        <div class="div1">
+            <img src="public/static/images/dashboard.png" class="img1" alt="">
+            <h2 style="padding-left: 10px;">Dashboard</h2>
         </div>
         <div class="user">
-            <img src="public/static/images/2.png" alt="image">
+            <img src="public/static/images/account.png" style="position:relative; top: 0px;" class="img1" alt="image">
             <span>John Doe</span>
         </div>
     </nav>
     <section class="conteneur">
         <div class="sidebar">
-            <aside>
-                <a href="">Enregistrer un département</a>
-                <div class="dropdown">
-                    <a class="dropbtn" href="">Gestion des employés
-                    </a>
-                    <div class="dropdown-content">
-                        <a href="#">Enregistrer un employé</a>
-                        <a href="#">Liste des employés</a>
-                    </div>
+           <aside>
+            <a style="margin-bottom: 5px;" href="">Enregistrer un département</a>
+            <img src="public/static/images/workers-connections-symbol.png" class="img2" alt="">
+            <div class="dropdown">
+                <a class="dropbtn" href="">Gestion des employés</a>
+                <img src="public/static/images/employment-man(1).png" style="padding-left: 20px;" class="img1" alt="">
+                <div class="dropdown-content">
+                    <a href="#">Enregistrer un employé</a>
+                    <a href="#">Liste des employés</a>
                 </div>
-                <div class="dropdown">
-                    <a class="dropbtn" href="">Gestion des objectifs
-                    </a>
-                    <div class="dropdown-content">
-                        <a href="#">Enregistrer un objectif</a>
-                        <a href="#">Liste des objectifs</a>
-                    </div>
+            </div>
+            <div class="dropdown">
+                <a class="dropbtn" href="">Gestion des objectifs</a>
+                <img src="public/static/images/goal(1).png" class="img1" alt="">
+                <div class="dropdown-content">
+                    <a href="#">Enregistrer un objectif</a>
+                    <a href="#">Liste des objectifs</a>
                 </div>
-                <div class="dropdown">
-                    <a class="dropbtn" href="">Gestion des tâches
-                    </a>
-                    <div class="dropdown-content">
-                        <a href="#">Enregistrer une tâche</a>
-                        <a href="#">Suivre une tâche</a>
-                        <a href="#">Liste des tâches</a>
-                    </div>
+            </div>
+            <div class="dropdown">
+                <img src="public/static/images/clipboard.png" style="padding-left: 20px;" class="img1" alt="">
+                <a class="dropbtn" href="">Gestion des tâches</a>
+                <div class="dropdown-content">
+                    <a href="#">Enregistrer une tâche</a>
+                    <a href="#">Suivre une tâche</a>
+                    <a href="#">Liste des tâches</a>
                 </div>
-                <div class="dropdown">
-                    <a class="dropbtn" href="">Gestion des comptes
-                    </a>
-                    <div class="dropdown-content">
-                        <a href="#">Inscrire un employé</a>
-                        <a href="#">Supprimer un employé </a>
-                    </div>
+            </div>
+            <div class="dropdown">
+                <img src="public/static/images/user(1).png" style="padding-left: 20px;" class="img1" alt="">
+                <a class="dropbtn" href="">Gestion des comptes
+                </a>
+                <div class="dropdown-content">
+                    <a href="#">Inscrire un employé</a>
+                    <a href="#">Supprimer un employé </a>
                 </div>
-                <a href="">Evaluation de performance</a>
-            </aside>
+            </div>
+            <a href="">Evaluation de performance</a>
+            <img src="public/static/images/performance.png" class="img3" alt="">
+            <div class="bas">
+                <a class="dropbtn" href="">Déconnexion</a>
+            </div>
+           </aside>
         </div>
         <section class="contain" id="cont">
-            <h3>Evaluation de performance</h3>
+            <h2>Evaluation de performance</h2>
                 <form action="" method="post">
                     <div class="container1">
                         <label for="mat">No matricule:</label> <br>
@@ -90,9 +97,9 @@
                         </div>
                     </section>
                 </form>
-                <section>
+                <section style="overflow-x: scroll;">
                     <h4 style="text-align: center; padding-bottom:20px;">Critères</h4>
-                    <div>
+                    <div class="critere">
                         <h4>Qualités</h4>
                         <div class="case">
                             <p>Fait preuve de rigueur dans le travail</p>
@@ -102,7 +109,8 @@
                             <p>S'assure de la qualité de son travail en faisant les suivis et les vérificaions nécessaires</p>
                             <input type="number" name="qu2" min="1" max="4" class="input2">
                         </div>
-                    <div>
+                    </div>
+                    <div class="critere">
                         <h4>Organisation du travail</h4>
                         <div class="case">
                             <p>Planifie et organise son travail de façon adéquate</p>
@@ -117,7 +125,7 @@
                             <input type="number" name="qu5" min="1" max="4" class="input2">
                         </div>
                     </div>
-                    <div>
+                    <div class="critere">
                         <h4>Prise de décisions</h4>
                         <div class="case">
                             <p>Cerne efficacement les données d'un problème</p>
@@ -132,7 +140,7 @@
                             <input type="number" name="qu9" min="1" max="4" class="input2">
                         </div>
                     </div>
-                    <div>
+                    <div class="critere">
                         <h4>Attitudes et comportements au travail</h4>
                         <div class="case">
                             <p>Traite ses collègues et son supérieur avec respect</p>
@@ -167,9 +175,9 @@
                 <section>
                     <div class="etat">
                         <h4 style="text-align: center; padding-bottom:20px;">Etat d'avancement de l'objectif</h4>
-                        <input type="radio" name="partiel" style="margin-right: 10px;">Objectif partiellement atteint
-                        <input type="radio" name="partiel" style="margin-right: 10px;">Objectif atteint
-                        <input type="radio" name="partiel" style="margin-right: 10px;">Objectif dépassé
+                        <input type="radio" name="etat" style="margin-right: 15px;">Objectif partiellement atteint
+                        <input type="radio" name="etat" style="margin-right: 15px;">Objectif atteint
+                        <input type="radio" name="etat" style="margin-right: 15px;">Objectif dépassé
                     </div>
                     <label for="comment">Commentaires sur l'employé évalué</label><br>
                     <textarea name="comment" placeholder="Entrez un commentaire" style="padding-top:20px;" cols="40" rows="5"></textarea>
